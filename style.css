@@ -1,0 +1,83 @@
+body html {
+  margin: 0;
+  padding: 0;
+}
+/* disabled horizontal scrolling */
+/* body {
+  overflow-x: hidden;
+} */
+/* .carousel */
+.maineImage {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+.maineImage {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+#bigDisplay img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  object-position: center;
+  /* transition: 3000ms; */
+}
+@media (min-width: 800px) {
+  .thumbnails {
+    position: absolute;
+    top: 3vh;
+    height: 120px;
+    width: 50%;
+    left: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    opacity: 0.9;
+    overflow-x: scroll;
+  }
+}
+
+.thumbnails {
+  position: absolute;
+  bottom: 3vh;
+  height: 120px;
+  width: 50%;
+  left: 25%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  opacity: 0.9;
+  overflow-x: scroll;
+}
+
+.carousel-button {
+  position: absolute;
+  z-index: 2;
+  font-size: 4rem;
+  /* background: none; */
+  border: 0;
+  top: 50%;
+  cursor: pointer;
+  color: rgba(rgb(218, 202, 202), rgb(222, 237, 222), rgb(211, 211, 222), 0.8);
+  background-color: rgba(rgb(26, 1, 1), rgb(0, 18, 0), rgb(1, 1, 19), 0.1);
+  opacity: 0.5;
+  padding: 0.5rem;
+}
+
+.carousel-button:hover,
+.carousel-button:focus {
+  color: white;
+  opacity: 1;
+}
+.carousel-button.next {
+  right: 1rem;
+}
+.carousel-button.prev {
+  left: 1rem;
+}
